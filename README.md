@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Ssseremba Cyprian Davis 
+# 👋 Hi, I'm Sseremba Cyprian Davis 
 
 **Software Developer |Backend Developer |Java & Spring Specialist | **
 
