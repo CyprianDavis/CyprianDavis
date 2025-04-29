@@ -49,6 +49,6 @@ I'm open to collaborating on:
 
 
 ## ⚡ Fun Facts
-- When I'm not coding, I enjoy watching movies
+- When I'm not coding, I enjoy watching movies and Video Games
 - Big fan of clean code principles and design patterns
 - Believe the best programs are both functional and elegant
