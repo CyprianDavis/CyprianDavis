@@ -26,7 +26,7 @@
 
 **DevOps & Tools:**
 - Git | GitHub | Maven | Docker (learning) 
-- Postman | Eclipse | IntelliJ IDEA
+- Postman | Eclipse 
 
 **Architecture:**
 - REST APIs | MVC | Layered Architecture | Microservices (learning)
