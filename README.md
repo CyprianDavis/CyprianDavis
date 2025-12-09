@@ -77,13 +77,6 @@ I love clean architecture, high-performance APIs, and integrating modern technol
 
 # 🚧 Featured Projects
 
-### 🏦 Pinkapple — Core Banking & ERP Platform
-- GL Accounting Engine  
-- Client onboarding  
-- Loan & deposit modules  
-- Role & permission management  
-- Multi-tenant architecture  
-
 ### 🧩 AISMS — Multi-Tenant Enterprise System
 - HR, Finance, Inventory, Accounting  
 - Dynamic stored procedures  
