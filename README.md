@@ -49,14 +49,13 @@ I love clean architecture, high-performance APIs, and integrating modern technol
 <p>
   <img src="https://img.shields.io/badge/React-50%25-61DAFB?logo=react&logoColor=black" />
   <img src="https://img.shields.io/badge/JavaFX-Desktop-blue?logo=java&logoColor=white" />
-  <img src="https://img.shields.io/badge/TailwindCSS-38B2AC?logo=tailwindcss&logoColor=white" />
 </p>
 
 ### 🔧 Tools
 <p>
   <img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white" />
   <img src="https://img.shields.io/badge/Maven-C71A36?logo=apachemaven&logoColor=white" />
-  <img src="https://img.shields.io/badge/Linux-Kali-blue?logo=linux&logoColor=white" />
+  <img src="https://img.shields.io/badge/Linux-blue?logo=linux&logoColor=white" />
   <img src="https://img.shields.io/badge/Postman-FF6C37?logo=postman&logoColor=white" />
   <img src="https://img.shields.io/badge/IntelliJ_IDEA-000000?logo=intellijidea&logoColor=white" />
 </p>
@@ -105,6 +104,7 @@ I love clean architecture, high-performance APIs, and integrating modern technol
 ✔ Strong in system design & problem-solving  
 
 ---
+
 ### 🏆 GitHub Achievements
 
 <p align="left">
@@ -121,11 +121,13 @@ I love clean architecture, high-performance APIs, and integrating modern technol
   </a>
 </p>
 
+---
 
 # 📫 Let's Connect
 <p>
-  <a href="#"><img src="https://img.shields.io/badge/Email-Contact_me-red?logo=gmail&logoColor=white" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin&logoColor=white" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/Email-Contact_me-red?logo=gmail&logoColor=white" />sserembacyprian25@gmail.com</a>
+  <a href="#"><img src="https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin&logoColor=white" />www.linkedin.com/in/sseremba-cyprian/
+</a>
   <a href="#"><img src="https://img.shields.io/badge/GitHub-Follow-black?logo=github&logoColor=white" /></a>
 </p>
 
