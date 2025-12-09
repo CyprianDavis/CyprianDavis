@@ -1,4 +1,4 @@
-# 👋 Hi, I'm **SSEREMBA CYPRIAN DAVI**  
+# 👋 Hi, I'm **SSEREMBA CYPRIAN DAVIS**  
 ### 🇺🇬 Java Developer | Spring Boot | Microservices | Cloud | AI | React
 
 <p align="left">
