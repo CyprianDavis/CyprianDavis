@@ -30,12 +30,13 @@ I love clean architecture, high-performance APIs, and integrating modern technol
   <img src="https://img.shields.io/badge/Spring_AI-Integration-40AEF0?logo=spring" />
 </p>
 
-### 🗄️ Databases
 <p>
   <img src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white" />
   <img src="https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQL_Server-CC2927?logo=microsoftsqlserver&logoColor=white" />
   <img src="https://img.shields.io/badge/Hibernate-59666C?logo=hibernate&logoColor=white" />
 </p>
+
 
 ### ☁️ Cloud & DevOps
 <p>
