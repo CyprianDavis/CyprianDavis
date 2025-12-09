@@ -105,15 +105,22 @@ I love clean architecture, high-performance APIs, and integrating modern technol
 ✔ Strong in system design & problem-solving  
 
 ---
+### 🏆 GitHub Achievements
 
-# 📊 GitHub Stats
+<p align="left">
+  <a href="https://github.com/users/CyprianDavis/achievements/pair-extraordinaire">
+    <img src="https://github.githubassets.com/images/modules/profile/achievements/pair-extraordinaire-default.png" width="90" title="Pair Extraordinaire" />
+  </a>
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=jonathank&show_icons=true&theme=tokyonight" height="160" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jonathank&layout=compact&theme=tokyonight" height="160" />
+  <a href="https://github.com/users/CyprianDavis/achievements/quickdraw">
+    <img src="https://github.githubassets.com/images/modules/profile/achievements/quickdraw-default.png" width="90" title="Quickdraw" />
+  </a>
+
+  <a href="https://github.com/users/CyprianDavis/achievements/pull-shark">
+    <img src="https://github.githubassets.com/images/modules/profile/achievements/pull-shark-default.png" width="90" title="Pull Shark" />
+  </a>
 </p>
 
----
 
 # 📫 Let's Connect
 <p>
