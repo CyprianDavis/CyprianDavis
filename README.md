@@ -125,10 +125,17 @@ I love clean architecture, high-performance APIs, and integrating modern technol
 
 # 📫 Let's Connect
 <p>
-  <a href="sserembacyprian25@gmail.com"><img src="https://img.shields.io/badge/Email-Contact_me-red?logo=gmail&logoColor=white" /></a>
-  <a href="www.linkedin.com/in/sseremba-cyprian/"><img src="https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin&logoColor=white" />
-</a>
-  <a href="#"><img src="https://img.shields.io/badge/GitHub-Follow-black?logo=github&logoColor=white" /></a>
+  <a href="mailto:sserembacyprian25@gmail.com">
+    <img src="https://img.shields.io/badge/Email-Contact_me-red?logo=gmail&logoColor=white" />
+  </a>
+
+  <a href="https://www.linkedin.com/in/sseremba-cyprian/">
+    <img src="https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin&logoColor=white" />
+  </a>
+
+  <a href="https://github.com/CyprianDavis">
+    <img src="https://img.shields.io/badge/GitHub-Follow-black?logo=github&logoColor=white" />
+  </a>
 </p>
 
 ---
