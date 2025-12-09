@@ -76,12 +76,171 @@ I love clean architecture, high-performance APIs, and integrating modern technol
 ---
 
 # 🚧 Featured Projects
+## 🧩 AISMS — Multi-Tenant Enterprise Management System
 
-### 🧩 AISMS — Multi-Tenant Enterprise System
-- HR, Finance, Inventory, Accounting  
-- Dynamic stored procedures  
-- Approval workflows  
-- Distributed microservices  
+AISMS is a fully modular, BusinessUnit-scoped, role-based, and approval-driven enterprise platform. Every operational record is scoped by **business_unit_id**, and user access is restricted to their **primary + assigned Business Units**.
+
+---
+
+### 🔥 1) Purpose & Goals
+- Unified system for **Inventory, Sales, Purchases, CRM, Invoicing, Documents, Expenses, Approvals, Reporting**.
+- Data visibility restricted through BusinessUnit scoping.
+- Dynamic architecture using **type tables** and **custom_fields JSON**.
+- Governance enforced via **approval_status** on all operational entities.
+
+---
+
+### 👥 2) Users & Access Model
+- Each user has:
+  - `primary_business_unit_id`
+  - Additional BUs via **UserBusinessUnitRole**
+- One role per user per BU → enforced by **UNIQUE(user_id, business_unit_id)**.
+- Permissions flow: **Role → Permission**.
+- Effective BU scope = `{primary BU} ∪ {assigned BUs}`.
+- All queries must filter by:
+  `business_unit_id IN (:allowedBUIds)`.
+
+---
+
+### 🗂️ 3) Multi-BU Data Partitioning
+- No tenant ID — **BusinessUnit is the partition**.
+- All scoped entities include:
+  - `business_unit_id`
+  - `approval_status` (PENDING | APPROVED | REJECTED | RETURNED)
+  - `custom_fields JSON`
+  - `is_active`, timestamps
+- Cross-BU workflows (e.g., StockTransfer) explicitly reference both source and destination BUs.
+
+---
+
+### 🏗️ 4) Core Domain Model
+- **BusinessUnit** (+ optional hierarchy)
+- Global: User, Role, Permission
+- Scoped membership: **UserBusinessUnitRole**  
+- Every operational entity inherits base fields (BU, approval, customization).
+
+---
+
+### 📦 5) Modules (BU-Scoped & Type-Driven)
+
+#### 📊 Inventory  
+- ProductType, ProductCategory, Product  
+- StockItem, StockAdjustment(+Type)  
+- StockTransfer(+Items)
+
+#### 🛒 Sales (POS)  
+- PromotionType, Promotion  
+- SaleTransaction, SaleItem  
+- PaymentType, Payment
+
+#### 📦 Purchases & Suppliers  
+- SupplierType, Supplier  
+- PurchaseType, PurchaseOrder, PurchaseItem  
+- GoodsReceipt(+Items)
+
+#### 💳 Invoicing (AP/AR)  
+- InvoiceType, Invoice  
+- InvoicePayment
+
+#### 🧑‍🤝‍🧑 CRM  
+- CustomerType, Customer
+
+#### 📄 Documents  
+- DocumentType, Document (linkable to any entity)
+
+#### ✔️ Approvals  
+- ApprovalConfiguration  
+- ApprovalRequest  
+- ApprovalLog
+
+#### 🔔 Notifications & Reporting  
+- NotificationType, Notification  
+- ReportType, Report, ReportSchedule
+
+#### 💰 Expenses  
+- ExpenseType, Expense
+
+#### 🧩 Customization  
+- `custom_fields JSON` everywhere  
+- Optional: CustomField + EntityCustomFieldValue
+
+---
+
+### 🔄 6) Key Workflows
+- **Sales** → Scan → Promotions → Payment → Stock decrement → Optional invoice  
+- **Purchasing** → PO → GoodsReceipt → Stock increment → Supplier invoice  
+- **Stock Transfer BU→BU** → Request → Approval → Ship/Receive  
+- **Approval Flow** → Pending → Routed via ApprovalConfiguration → Logged in ApprovalLog  
+
+---
+
+### 🔐 7) Security & Enforcement
+Backend (Spring Security):
+- Resolve allowed BUs
+- Enforce permission + BU checks
+
+Frontend:
+- User selects active BU
+- UI hides unauthorized modules automatically
+
+---
+
+### ⚙️ 8) Tech Stack
+- Spring Boot, JPA/Hibernate, Spring Security  
+- PostgreSQL (JSONB, enums, Flyway)  
+- Optional: Redis, RabbitMQ/Kafka  
+- SMTP, SMS/WhatsApp  
+- File storage: S3 / MinIO
+
+---
+
+### 🧩 9) Schema & Conventions
+- PKs = BIGSERIAL  
+- Enums: `approval_status`, `business_unit_status`  
+- JSONB used for custom fields and rules  
+- Unique per BU: `(business_unit_id, code)` and `(business_unit_id, sku)`  
+- Index all foreign keys + business_unit_id  
+
+---
+
+### 📈 10) Observability & Ops
+- AuditLog for sensitive actions  
+- BU context in all logs  
+- Metrics: throughput, stock accuracy, approval latency  
+- Daily backups  
+- Dev → Staging → Prod environments  
+
+---
+
+### 🧱 11) Extensibility
+- Add new type tables (ProductType, DocumentType, etc.) without code  
+- Custom fields for metadata flexibility  
+- Approval rules defined entirely in data  
+
+---
+
+### 🧪 12) Testing Strategy
+- Unit: services, approval transitions  
+- Integration: BU filters, FKs  
+- E2E: role matrix, BU boundaries  
+
+---
+
+### 🛠️ 13) Delivery Roadmap
+1. Foundation: BU + Users + Roles + Permissions  
+2. Inventory Core  
+3. Sales & Payments  
+4. Purchasing & Accounts Payable  
+5. CRM & Accounts Receivable  
+6. Documents + Approvals  
+7. Notifications + Reporting  
+8. Hardening, Observability, Indexing  
+
+---
+
+### ✅ AISMS Summary
+A scalable, BusinessUnit-scoped enterprise system with strict access control, data-driven configuration, multi-stage approvals, and modular domain architecture — designed for organizations needing clean data separation, robust workflows, and operational excellence.
+
 
 ### 🔍 Lost & Found System
 - REST API with Spring Boot  
