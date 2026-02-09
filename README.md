@@ -1,5 +1,5 @@
 # 👋 Hi, I'm **SSEREMBA CYPRIAN DAVIS**  
-### 🇺🇬 Java Developer | Spring Boot | Microservices | Cloud | AI | React
+### 🇺🇬 Software Developer | Java Developer | Spring Boot | Microservices | Cloud | AI | React
 
 <p align="left">
   <img src="https://img.shields.io/badge/Java-Expert-orange?logo=java&logoColor=white" />
